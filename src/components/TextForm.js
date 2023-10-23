@@ -28,7 +28,7 @@ export default function TextForm(props) {
 
     const btnCopyText = ()=>{                
         navigator.clipboard.writeText(text);   
-        props.showAlert("Copies to Clipboard!","success");
+        props.showAlert("Copied to Clipboard!","success");
     }
 
     const onToggleChange = (event)=>{   

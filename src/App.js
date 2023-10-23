@@ -44,12 +44,12 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} showAlert={showAlert} setTheme={setTheme}/>
+        <Alert alert={alert}/>       
         <Routes>
           <Route exect path="/" element={<TextForm mode={mode} showAlert={showAlert}/>} />
           <Route exect path="/about" element={<About mode={mode}/>} />
         </Routes>
       </BrowserRouter>
-      <Alert alert={alert}/>      
     </>
   );
 }
